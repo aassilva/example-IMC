@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, a {
   outline:none;
   padding-left:10px;
 }
-.imc-form input[type="button"] {
+.imc-form input[type="button"]{
   height:30px;
   width:100px;
   background:#fff;

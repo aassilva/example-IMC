@@ -5,6 +5,8 @@
 
 		<title>Calculo IMC</title>
 
+		<script src="script.js"></script>
+
     <style>
 
       * {
@@ -40,12 +42,11 @@
       #site {
         text-align: center;
         position: absolute;
-        top: 120px;
+        top: 100px;
         left: 50%;
         width: 560px;
         padding: 20px;
-        margin-left: -300px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
-
+        margin-left: -300px;
       }
 
 
@@ -70,11 +71,24 @@
   </div>
   <div class="imc-form">
     <h3>Peso:</h3>
-    <input type="peso" placeholder="Digite o peso em kg exemplo: 59"/><br>
+    <input type="peso" id="peso" placeholder="Digite o peso em kg exemplo: 59"/><br>
     <h3>Altura:</h3>
-    <input type="altura" placeholder="Digite a altura em m exemplo: 1,60"/>
+    <input type="altura" id="altura" placeholder="Digite a altura em m exemplo: 1.60"/>
     <br>
-    <input type="button" value="Calcular" class="imc-button"/>
+    <input type="button" onclick="calculaIMC()" value="Calcular" class="imc-button"/>
+
+		<fieldset style="margin-top: 20px">
+        <legend>Seu IMC</legend>
+				<div>
+							<br />
+							<h3 style="text-align: center" id="result">
+								<span id="resultado"></span>
+								<b>kg/m2</b>
+							</h3>
+							<span id="descricao"></span>
+				</div>
+    </fieldset>
+
   </div>
 </div>
 
