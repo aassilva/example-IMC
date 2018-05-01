@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Calculo IMC</title>
+
+    <style>
+
+      * {
+        margin: 0;
+        padding:0;
+      }
+
+      body, html {
+        width: 100%;
+        height: 100%;
+        font-family: Arial, Tahoma, sans-serif;
+      }
+
+      #fundo-externo {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      #fundo {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        opacity:.4;
+      }
+
+      #fundo img {
+        width: 100%;
+        position: absolute;
+      }
+
+      #site {
+        text-align: center;
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        width: 560px;
+        padding: 20px;
+        margin-left: -300px; /* por causa do posicionamento absoluto temos que usar margem negativa para centralizar o site */
+
+      }
+
+
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+
+    <div id="fundo-externo">
+      <div id="fundo">
+        <img src="frustrated-woman.jpg" alt="" />
+    </div>
+  </div>
+
+  <div id="site">
+    <div class="imc">
+  <div class="imc-header">
+    <h1>Calculo do Índice de massa corporal (IMC)</h1>
+  </div>
+  <div class="imc-form">
+    <h3>Peso:</h3>
+    <input type="peso" placeholder="Digite o peso em kg"/><br>
+    <h3>Altura:</h3>
+    <input type="altura" placeholder="Digite a altura em cm"/>
+    <br>
+    <input type="button" value="Calcular" class="imc-button"/>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>
