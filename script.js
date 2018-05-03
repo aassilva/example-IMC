@@ -66,7 +66,7 @@ function calculaIMC(){
 
 	var resultado = document.getElementById('resultado');
 
-	resultado.innerText = imc;
+	resultado.innerText = imc.toFixed(2);
 	resultado.className = className;
 	document.getElementById('descricao').innerText = description;
 	document.getElementById('openReveal').click();
